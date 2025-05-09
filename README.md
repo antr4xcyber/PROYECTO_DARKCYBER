@@ -56,7 +56,6 @@ Any claims that the authors of some of the content we have used may have.
 
 Please do not hesitate to contact us for their removal. 
 
-Translated with DeepL.com (free version)
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 It is worth mentioning the following:
