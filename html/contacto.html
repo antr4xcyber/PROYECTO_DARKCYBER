@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- CABECERA DE LA PÁGINA WEB (ESTO NO SE MUESTRA) -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Adapta el contenido al ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <!-- CSS, e Icono pagina -->
+    <link rel="stylesheet" href="../css/PROYECTO_01.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../media/icons/icon_web/favicon.ico">
+    <!-- Autores -->
+    <meta name="author" content="Félix Llorente Sotillo 1ºASIR">
+    <meta name="author" content="Carmen Rial García 1ºASIR">
+    <!-- SCRIPTS JavaScript -->
+    <script src="../JS/JavaScript.js" defer></script>
+</head>
+<body>
+        
+    <!-- BARRA DE NAVEGACIÓN HORIZONTAL DE LA PÁGINA WEB  -->
+    <div class="container">
+        <nav class="barra-nav">
+            <a href="../html/DARKTRACE.html"><img src="../media/images/LOGO_DARKCYBER.png" alt="LOGO_DARKCYBER"></a>
+            <a href="../html/fabricantes.html">Fabricantes</a>
+            <a href="../html/servicios.html">Servicios</a>
+            <a href="../html/sobre_nosotros.html">Sobre Darkcyber</a>            
+            <a href="../html/clientes.html">Clientes</a>         
+            <a href="../html/contacto.html" class="active">Contacto</a>
+        </nav>
+        <!-- FIN DE LA BARRA DE NAVEGACIÓN HORIZONTAL -->
+
+    <header class="header header-contacto">
+        <img src="../media/images/transparente.png" alt="Logo Darkcyber" class="logo">
+    </header>
+
+    <div class="descrip_empresa">
+        <h2>Contacta con nuestros asistentes en un instante.</h2>
+        <p>
+            Nuestros asistentes en remoto estan disponibles llamando al teléfono <strong>911666777</strong> o al <strong>+34 612 781 901</strong> o via correo electrónico <a href="mailto:support@darkcyber.com"><strong>support@darkcyber.com</strong></a>
+        </p>
+        <p>
+            Gracias a nuestro excelente equipo técnico de soporte, garantizamos la asistencia remota, <strong>24</strong> horas los <strong>365</strong> días del año.
+        </p>
+
+    </div>
+
+
+            
+<!-- Formulario -->
+        <section>
+            <div>
+                <form class="formulario" id="form" method="get" action="DARKTRACE.html">
+                    <h1>Formulario de contacto</h1>
+                    <div class="fila">
+                        <div class="grupo">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required>
+                        </div>
+                        <div class="grupo">
+                            <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="grupo">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="grupo">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="[0-9]{10}">
+                        </div>
+                    </div>
+
+                    <!-- CAMPO PARA INTRODUCIR CUERPO DEL MENSAJE -->
+                    <div class="grupo">
+                        <textarea id="mensaje" required name="mensaje" rows="10" cols="50" placeholder="Mensaje"></textarea>
+                    </div>
+                    <br>
+                    <!-- CHECKBOX POLITICA PRIVACIDAD -->
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            Conozco y acepto la <a href="#">política de privacidad</a>
+                        </label><br>
+                    </div>
+                    <button type="submit" class="boton">Enviar Mensaje</button>
+                </form>
+                <br>
+
+            </div>
+        </section>
+
+    
+    <!-- FOOTER DE LA PÁGINA WEB -->
+        <footer class="footer">
+            <img src="../media/images/LOGO_DARKCYBER_White.svg" alt="LOGO DARKCYBER">
+            <p><strong>Darkcyber Technology</strong>
+            es una compañía global de servicios de IT que gestiona y moderniza las infraestructuras tecnológicas 
+            integrándolas con nuevas plataformas digitales, multiplicando las capacidades de las empresas mediante 
+            la innovación en sus negocios.
+            </p>
+
+            <ul>
+                <li><a href=""><img src="../media/icons/footer/twitter.png" alt="Twitter"></a></li>
+                <li><a href=""><img src="../media/icons/footer/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="mailto:support@darkcyber.com"><img src="../media/icons/footer/email.png" alt="Email"></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

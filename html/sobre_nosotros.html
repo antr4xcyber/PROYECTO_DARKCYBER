@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- CABECERA DE LA PÁGINA WEB (ESTO NO SE MUESTRA) -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Adapta el contenido al ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre Darkcyber</title>
+    <!-- CSS, e Icono pagina -->
+    <link rel="stylesheet" href="../css/PROYECTO_01.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../media/icons/icon_web/favicon.ico">
+    <!-- Autores -->
+    <meta name="author" content="Félix Llorente Sotillo 1ºASIR">
+    <meta name="author" content="Carmen Rial García 1ºASIR">
+    <!-- SCRIPTS JavaScript -->
+    <script src="../JS/JavaScript.js" defer></script>
+</head>
+<body>
+        
+    <!-- BARRA DE NAVEGACIÓN HORIZONTAL DE LA PÁGINA WEB  -->
+    <div class="container">
+        <nav class="barra-nav">
+            <a href="../html/DARKTRACE.html"><img src="../media/images/LOGO_DARKCYBER.png" alt="LOGO_DARKCYBER"></a>
+            <a href="../html/fabricantes.html">Fabricantes</a>
+            <a href="../html/servicios.html">Servicios</a>
+            <a href="../html/sobre_nosotros.html" class="active">Sobre Darkcyber</a>            
+            <a href="../html/clientes.html">Clientes</a>         
+            <a href="../html/contacto.html">Contacto</a>
+        </nav>
+        <!-- FIN DE LA BARRA DE NAVEGACIÓN HORIZONTAL -->
+
+        
+    <!-- HEADER APARTADO DE SOBRE DARKTRACE -->
+    <header class="header header-sobre-nosotros">
+        <img src="../media/images/transparente.png" alt="Logo Darkcyber" class="logo">
+    </header>
+    <!-- FIN HEADER APARTADO SOBRE DARKTRACE -->
+
+    <div class="descrip_empresa">
+        <h1>Sobre Darkcyber Technology</h1>
+        <p>Fundada en el año 2025, <strong>Darkcyber Technology</strong> es una compañía global de servicios de IT que gestiona y moderniza las infraestructuras tecnológicas 
+           integrándolas con nuevas plataformas digitales multiplicando así, la capacidades de innovación de las empresas que trabajan con nosotros.</p>
+
+        <p>En <strong>Darkcyber</strong>, tratamos de ser pioneros en el sector de la tecnología. Trabajamos para convertirnos en el aliado tecnológico de cientos de empresas, 
+        ofreciéndoles <strong>soluciones innovadoras</strong> y <strong>personalizadas</strong>. Somos especialistas en soluciones en la <strong>nube</strong>, <strong>ciberseguridad 
+        avanzada</strong>, y <strong>automatización digital</strong>, siempre con el objetivo de optimizar tus operaciones y mejorar tu competitividad.</p>
+        
+        <p>Nuestro enfoque es simple: brindarte la tecnología más avanzada y un soporte inigualable, asegurándonos de que tu empresa esté siempre preparada para el futuro. 
+        En <strong>Darkcyber Technology</strong>, no solo implementamos tecnología, creamos alianzas sólidas que garantizan que siempre cuentes con lo último en innovación y eficiencia.</p>
+
+        <h2>Misión</h2>
+        <p>Tenemos la misión de contribuir a la transformación digital de nuestros clientes ayudándoles a aplicar 	la tecnología en sus negocios para ser más innovadores y eficaces, mejorando su competitividad y capacidad 	de liderazgo en los mercados.</p>
+
+        <h2>Visión</h2>
+        <p>Liderar el mercado de la digitalización mediante la excelencia, optimizando la transición de las organizaciones que quieren transformarse en empresas digitales capaces de ofrecer mejores experiencias a sus clientes y crear entornos idóneos para sus empleados.</p>
+
+    </div>
+
+
+<!-- CAJAS CON EQUIPO DIRECTIVOS (Avatar, Nombre, Puesto, )-->
+    <div class="equipo_directivo">
+        <h1>Equipo Directivo</h1>
+        <div class="equipo_directivo_contenido">
+            <div class="caja">
+                <h3>Director del área de Redes y Ciberseguridad</h3>
+                <p><strong>Félix Llorente Sotillo</strong></p>
+                <img src="../media/avatar/Avatar_felix.svg" alt="Avatar de Félix Llorente Sotillo">
+                <div class="link_directivo">
+                    <a href=""><img src="../media/icons/footer/linkedin.png" alt="LinkedIn"></a>
+                    <a href="mailto:felix.llorente@darkcyber.com"><img src="../media/icons/footer/email.png" alt="Email"></a>
+                </div>            
+            </div>
+        
+            <div class="caja">
+                <h3>Directora de Sistemas e Infraestructuras</h3>
+                <p><strong>Carmen Rial García</strong></p>
+                <img src="../media/avatar/Avatar_carmen.svg" alt="Avatar de Félix Llorente Sotillo">            
+                <div class="link_directivo">
+                    <a href=""><img src="../media/icons/footer/linkedin.png" alt="LinkedIn"></a>
+                    <a href="mailto:carmen.rial@darkcyber.com"><img src="../media/icons/footer/email.png" alt="Email"></a>
+                </div>           
+            </div>
+        </div>
+    </div>
+    
+<!-- Formulario -->
+        <section>
+            <div>
+                <form class="formulario" id="form" method="get" action="DARKTRACE.html">
+                    <h1>Formulario de contacto</h1>
+                    <div class="fila">
+                        <div class="grupo">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required>
+                        </div>
+                        <div class="grupo">
+                            <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="grupo">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="grupo">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="[0-9]{10}">
+                        </div>
+                    </div>
+
+                    <!-- CAMPO PARA INTRODUCIR CUERPO DEL MENSAJE -->
+                    <div class="grupo">
+                        <textarea id="mensaje" required name="mensaje" rows="10" cols="50" placeholder="Mensaje"></textarea>
+                    </div>
+                    <br>
+                    <!-- CHECKBOX POLITICA PRIVACIDAD -->
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            Conozco y acepto la <a href="#">política de privacidad</a>
+                        </label><br>
+                    </div>
+                    <button type="submit" class="boton">Enviar Mensaje</button>
+                </form>
+                <br>
+
+            </div>
+        </section>
+
+
+    <!-- FOOTER DE LA PÁGINA WEB -->
+        <footer class="footer">
+            <img src="../media/images/LOGO_DARKCYBER_White.svg" alt="LOGO DARKCYBER">
+            <p><strong>Darkcyber Technology</strong>
+            es una compañía global de servicios de IT que gestiona y moderniza las infraestructuras tecnológicas 
+            integrándolas con nuevas plataformas digitales, multiplicando las capacidades de las empresas mediante 
+            la innovación en sus negocios.
+            </p>
+
+            <ul>
+                <li><a href=""><img src="../media/icons/footer/twitter.png" alt="Twitter"></a></li>
+                <li><a href=""><img src="../media/icons/footer/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="mailto:support@darkcyber.com"><img src="../media/icons/footer/email.png" alt="Email"></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
