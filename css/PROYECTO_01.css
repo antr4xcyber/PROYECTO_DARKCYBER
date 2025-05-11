@@ -1,0 +1,538 @@
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+
+
+
+/* 
+COLORES EMPLEADOS 
+#595CFF MORADO
+#CFCFCF GRIS  
+#000000 BLACK 
+#FFFFFF WHITE
+
+
+TIPOGRAFIA UTILIZADA (
+'Segoe UI'  ----- > Letra principal que deseamos utilizar.
+, Tahoma, Geneva, Verdana, sans-serif
+)
+
+*/
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    /* flex hace que se centre la página  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+}
+
+/* Añadimos esto en la edicion del día 22/04/25 para que la página sea más responsiva 
+y no se desborde el contenido en pantallas muy grandes. */
+.container {
+    max-width:  2400px;
+    min-width: 300px;
+    width: 100%;
+}
+
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+
+
+/*               CARACTERISTICAS DE LOS HEADER PARA CADA PAGINA WEB ENLAZADA EN EL MENÚ HEADER                    */
+
+/* Se ha simplificado el código respecto al anterior modelo haciendolo más eficiente a la hora de procesarse 
+y modificarse en caso de necesidad. Esto es gracias a que hemos pensado un poco :D y llegamos a la conclusión 
+de que se podían simplificar las reglas del HEADER  */
+
+/* 22/04/2025 */
+
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 5rem hwb(239 35% 0%);
+    height: 35rem;
+}
+
+.header-inicio {
+    background-image: url(../media/images/CYBER-Darktrace-scaled.jpg);
+    height: 20rem;
+}
+
+.header-inicio img{
+    justify-content: center;
+}
+
+.header-soluciones {
+    background-image: url(../media/images/ojo.jpg);
+}
+
+.header-servicios {
+    background-image: url(../media/images/services4.jpeg);
+}
+
+.header-sobre-nosotros {
+    background-image: url(../media/images/workgroup.webp);
+}
+
+.header-contacto {
+    background-image: url(../media/images/contacto2.jpg);
+}
+
+.header-productos {
+    background-image: url(../media/images/rack2.jpeg);
+}
+
+/*                                              FINAL REGLAS HEADER                                               */
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+
+/* CONTENIDOS DEL MAIN */
+.foto_content {
+/* Esto hace que las imagenes que hay de contenido en la página se quede ajustada
+ al contenido padre */
+    width: 100%;
+    position: sticky;
+}
+
+.descrip_empresa {
+    margin: 5rem;
+    font-size: 1rem;
+}
+
+
+.descrip_empresa p {
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+
+
+.soluciones_inteligentes {
+    margin: 5rem;
+    font-size: 1rem;
+}
+
+.soluciones_inteligentes p {
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Fichero de sobre_nosotros aplica a al div que contiene el organigrama de la empresa */
+.equipo_directivo {
+    margin: 5rem;
+    font-size: 1rem;
+}
+
+.equipo_directivo_contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/images/services3.jpg);
+    padding: 5rem 5rem;
+}
+
+.link_directivo a img{
+    width: 1.5rem;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.logo {
+    max-width: 20rem;
+}
+
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+
+/*                                          BARRA DE NAVEGACION HORIZONTAL                                        */
+
+
+/* Atributos de los elementos con clase barra-nav */
+.barra-nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+    background-color: #e1e1e1;
+    font-size: large;
+}
+
+/* Atributos de las img que con clase barra-nav */
+.barra-nav img {
+    width: 8rem;
+}
+
+/* Atributos de los elementos a con clase barra-nav */
+.barra-nav a {
+    justify-content: center;
+    min-width: 140px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    color: black;
+}
+
+/* Transformacion de los elementos a con clase barra-nav al sobreponer el raton */
+.barra-nav a:hover {
+    color: hwb(239 35% 0%);
+}
+
+/* Los elementos con clase active dentro de la clase barra-nav */
+.barra-nav a.active {
+    color: hwb(239 35% 0%);
+    background-color: white;
+    padding: 1rem;
+    border: 2px solid hwb(239 35% 0%);
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem hwb(239 35% 0%);
+}
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+                                /* SECCIONES DE CONTENIDO */
+
+/* Atributos del titulo de la seccion */
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:  hwb(239 35% 0%);
+}
+
+/* Atributos para elementos con clase .servicios */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    background-image: url(../media/images/CYBER-Darktrace-scaled2.jpg);
+    padding: 2rem;
+}
+
+
+/* Atributos para los elementos con clase caja */
+.caja {
+    min-width: 300px;
+    max-width: 600px;
+    flex: 1 1 20rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px hwb(239 35% 0%);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Atributos de los elementos a */
+/* Quitar decoracion de los enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Elementos con clase caja al sobreponer el raton */
+/* Transformacion del elementos con clase caja al poner el raton encima */
+.caja:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 80px hwb(239 35% 0%);
+}
+
+/* Imagenes con clase caja */
+/* Atributos de las imagenes que haya en los elementos con clase caja */
+.caja img {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+/* Encabezados con clase caja */
+/* Atributos de los Títulos que tengan clase caja */
+.caja h3 {
+    color:  hwb(239 35% 0%);
+}
+
+/* Atributos de los parrafos con clase caja */
+.caja p {
+    font-size: 0.95rem;
+    color: black;
+}
+
+
+
+
+/* PAGINA WEB DE CLIENTES */
+.clientes {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    background-image: url(../media/images/defensa.jpg);
+    padding: 2rem;
+}
+
+.clientes .caja {
+    /* min-width: 700px;
+    max-width: 1050px; */
+    flex: 1 1 10rem;  /*  hace que sea igual son diferentes propiedades del flex (grow,shrink,basis)  */
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px hwb(239 35% 0%);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+
+.clientes .caja img {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+                                                    /* Formulario */   
+
+.formulario{
+    margin:5rem;
+    padding:2rem 2rem 3rem;
+    background:#aeaff0;
+    border:.1rem solid #000;
+    border-radius:1rem;
+}
+
+  .formulario h1{
+    font-size: 2rem;
+  }
+  
+  /* --- grid de  de columnas --- */
+.fila{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    margin-bottom:1rem;
+}
+  
+.grupo{
+    flex:1 1 45%;
+}
+  
+.grupo.full{                 /* textarea ocupa 100 % */
+    flex:1 1 100%;
+  }
+  
+/* --- inputs & textarea --- */
+.grupo input,
+.grupo textarea{
+    width:100%;
+    padding:1rem;
+    font-size:1.1rem;
+    border:none;
+    border-radius:.8rem;
+    box-sizing:border-box;
+}
+  
+/* Texto de los input y textarea del formulario más grande 1.3rem */
+.grupo input::placeholder,
+.grupo textarea::placeholder{
+    font-size:1.3rem;
+}
+
+.checkbox a{
+    color:#293bd8;
+    text-decoration:underline;}
+
+.checkbox a:hover{
+    color:red;
+}
+
+
+/* --- botón --- */
+.boton{
+background:#575afa;
+color:#fff;
+border:none;
+padding:1rem;
+width:12rem;
+border-radius:.6rem;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+margin-left:auto;          /* lo alinea a la derecha */
+display:block;
+transition:.3s;
+}
+
+.boton:hover{
+background: #3e40d4;
+transform: translateY(-5px);
+box-shadow: 0 0 80px hwb(239 35% 0%);
+transition-duration: 0.5s;
+}
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+  
+/* CAJAS CON LOGOS DE FABRICANTES */
+
+
+/* CLASE PARA FABRICANTES */
+.fabricantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Caja que contiene los logos de algunos de los fabricantes con los que trabajamos */
+.caja-logo {
+    display: inline-flex;   /* Centra las imagenes dentro de la caja */
+    margin-bottom: 3rem;
+    margin-right: 3em;
+    background-color: white;
+    box-shadow: 0 0 3px hwb(239 35% 0%);
+    padding: 3rem;
+    border-radius: 1rem;
+    height: 5rem;
+    width: 8rem;
+}
+
+/* Logos de los fabricantes dentro de la caja-logo */
+.caja-logo img {
+    width: 100%;
+    align-items: center;
+}
+
+/* regla creada por logo de offsec tiene letras blancas y no se muestra por eso fondo distinto */
+.caja-logo.offsec img {
+    padding: 5%;
+    background-color: #0b062d;
+}
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+                                        /* FOOTER  |  PIE DE PÁGINA */
+
+/* Atributos del FOOTER */
+.footer{
+    background-color: rgb(36, 36, 36);
+    color: #ccc;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 20rem 1rem 20rem;
+    box-shadow: 0 0 5rem hwb(239 35% 0%);
+}
+
+/* Atributos de las img con clase footer */
+.footer img {
+    width: 20rem;
+}
+
+/* Atributos de las listas ul con clase footer */
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Atributos para los img descencientes de un li hijo de un ul con clase footer */
+.footer ul li img{
+    width: 2.5rem;
+}
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
+
+                                        /* POP UP COOKIES  */
+
+/* Estilos para el PopUp de Cookies */
+#cookie-popup {
+  position: fixed;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  right: 1.2rem;
+  max-width: 30rem;
+  z-index: 0;  /* Esta propiedad ajusta el eje Z del Pop Up 
+  no es necesario ya que por defecto está superpuesto al body */
+}
+
+.cookie-box {
+  background: #ffffff;
+  border: 0.1rem solid #ccc;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.cookie-box p {
+    /* margen abajo de 1rem */
+  margin: 0 0 1rem;
+}
+
+.cookie-box a {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+/* Botones Aceptar o Rechazar Cookies  */
+.cookie-btn {
+  padding: 0.8rem 1.2rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Mouse sobre los botones de aceptar o rechazar las cookies */
+.cookie-btn:hover{
+    transform: translateY(0.1rem);
+    box-shadow: 0 0 1rem hwb(239 35% 0%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* ############################################################################################################## */
+/* ############################################################################################################## */
